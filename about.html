@@ -101,23 +101,21 @@
 
     <div>
       <header
-        style="
-          background-color: rgba(219, 219, 219, 0.448);
-          border-bottom-width: 3px;
-          border-bottom-style: solid;
-          border-top-width: 3px;
-          border-top-style: solid;
-        "
+        style="background-color: rgba(219, 219, 219, 0.448)"
         class="shadow p-10 mb-3"
       >
         <img
           id="background-image"
-          src="./img/PfostenDynamics.png"
+          src="./img/new-about.jpg"
           style="
             display: block;
             margin-left: auto;
             margin-right: auto;
-            max-height: 5cm;
+            /*max-height: 5cm;*/
+            height: 100%;
+            border: 2px;
+            border-style: ridge;
+            border-color: gray;
           "
           class="img-fluid"
           draggable="false"
@@ -128,8 +126,9 @@
     </div>
 
     <div class="container">
+      <br />
       <div class="h5">
-        <p class="text-center">
+        <p style="hyphens: auto; text-align: justify">
           Pfostendynamics is a world leader in building electric bobbycars,
           tackling some of the toughest electronic and mechanical challenges. We
           combine the principles of dumb ideas and too much free time,
@@ -142,7 +141,7 @@
         </p>
       </div>
 
-      <h2 class="mt-5 display-1" style="text-shadow: 2px 2px #686868;">FAQ</h2>
+      <h2 class="mt-5 display-1" style="text-shadow: 2px 2px #686868">FAQ</h2>
       <div id="faq">
         <div>
           <a href="#Q1" class="text-decoration-none"
@@ -157,39 +156,35 @@
             >Q: When can I buy a electric bobbycar?</a
           >
           <br />
-          <a
-            href="#team"
-            class="text-decoration-none h5"
-            style="padding-left: 20px"
-            >Our team</a
-          >
-          <br />
         </div>
         <br />
-        <div id="Q1">
-          <a>Q: Why does Pfosten Dynamics make electric bobbycars?</a>
-          <p>A: Because we can</p>
-        </div>
-        <div id="Q2">
-          <a>Q: What makes Pfostendynamics unique?</a>
-          <p>
-            A: One of the things that makes Pfostendynamics unique is the
-            ambition to build a electric bobbycar that does not go up in smoke
-            immediately. Peter Poetzi began tackling this problem before anyone
-            else of us. And we’ve been at it since, almost 3 years. We’ve been
-            inspired by and worked towards this goal for so long that we have
-            invented techniques to make bobbycars work that you can’t find in
-            any textbook or technical article. The result is that we now know
-            how to build such bobbycars so that they work for around 100
-            Kilometers without something that breaks or needs fixing.
-          </p>
-        </div>
-        <div id="Q3">
-          <a>Q: When can I buy a electric bobbycar?</a>
-          <p>
-            A: For now these are not up for sale, but you can self buld yourself
-            one.
-          </p>
+        <div id="Q" class="h4" style="padding-left: 50px">
+          <div id="Q1">
+            <a>Q: Why does Pfosten Dynamics make electric bobbycars?</a>
+            <p>A: Because we can</p>
+          </div>
+          <div id="Q2">
+            <a>Q: What makes Pfostendynamics unique?</a>
+            <p>
+              A: One of the things that makes Pfostendynamics unique is the
+              ambition to build a electric bobbycar that does not go up in smoke
+              immediately. Peter Poetzi began tackling this problem before
+              anyone else of us. And we’ve been at it since, almost 3 years.
+              We’ve been inspired by and worked towards this goal for so long
+              that we have invented techniques to make bobbycars work that you
+              can’t find in any textbook or technical article. The result is
+              that we now know how to build such bobbycars so that they work for
+              around 100 Kilometers without something that breaks or needs
+              fixing.
+            </p>
+          </div>
+          <div id="Q3">
+            <a>Q: When can I buy a electric bobbycar?</a>
+            <p>
+              A: For now these are not up for sale, but you can self buld
+              yourself one.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -200,7 +195,7 @@
     >
       <br />
       <div id="about-pic">
-        <img
+        <!--<img
           src="./img/new-about.jpg"
           class="img-fluid rounded mx-auto d-block shadow"
           style="
@@ -211,7 +206,13 @@
           "
           draggable="false"
           ondragstart="return false;"
-        />
+        />-->
+        <h2
+          class="display-1"
+          style="text-shadow: 2px 2px #686868; margin-top: -30px"
+        >
+          Our Team
+        </h2>
       </div>
       <br />
       <div class="container" id="team">
@@ -219,7 +220,7 @@
           <li class="media">
             <img
               class="mr-3 img-fluid shadow rounded"
-              src="./img/members/feedc0de.jpg"
+              src="./img/placeholder.jpg"
               style="
                 max-height: 150px;
                 border: 2px;
