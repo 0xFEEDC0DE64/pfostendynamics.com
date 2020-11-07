@@ -1,10 +1,12 @@
-RewriteEngine On
-RewriteBase /
+# mod_rewrite starts here
+RewriteEngine on
 
-# redirect html pages to the root domain
-RewriteRule ^index\.html$ / [NC,R,L]
+# Prevent directory listings
+Options All -Indexes
 
-# remove filename
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# does not apply to existing directories, meaning that if the folder exists on the server then don't change anything and don't run the Rule!
+
+RewriteCond %{REQEUSTED_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
