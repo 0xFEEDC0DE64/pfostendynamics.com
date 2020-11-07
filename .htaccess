@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+
+# redirect html pages to the root domain
+RewriteRule ^index\.html$ / [NC,R,L]
+
+# remove filename
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
