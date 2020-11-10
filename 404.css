@@ -1,0 +1,21 @@
+div.container {
+  height: 10em;
+  position: relative;
+}
+div.container p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 5vw;
+  font-family: "Inconsolata", monospace;
+  text-align: center;
+  width: auto;
+}
+
+body {
+  background-color: black;
+}
