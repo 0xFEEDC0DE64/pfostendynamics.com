@@ -92,6 +92,9 @@ function checkDarkmode() {
 }
 
 function load() {
+  if(getCookie("darkmode") == "") {
+    setCookie("darkmode", false, 999);
+  }
   checkDarkmode();
 }
 
