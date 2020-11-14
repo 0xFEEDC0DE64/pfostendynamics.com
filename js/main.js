@@ -7,6 +7,7 @@ if (getCookie("darkmode") == null) {
   applyDarkmode = getCookie("darkmode");
   console.log("Cookie darkmode:" + applyDarkmode);
 }
+var isDark = false;
 
 function setdarkMode(state) {
   console.log(
