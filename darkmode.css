@@ -15,3 +15,8 @@ body.darkMode {
 .container-fluid {
     padding: 0px !important;
 }
+
+.row {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
