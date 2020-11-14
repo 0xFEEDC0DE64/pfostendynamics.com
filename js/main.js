@@ -96,6 +96,7 @@ function load() {
     setCookie("darkmode", false, 999);
   }
   checkDarkmode();
+  setactivePage();
 }
 
 /*Cookie scripts*/
