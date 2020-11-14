@@ -11,12 +11,3 @@ body.darkMode {
 .text-shadow.darkMode {
     text-shadow: 1.3px 1.3px #818181 !important;
 }
-
-.container-fluid {
-    padding: 0px !important;
-}
-
-.row {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-}
