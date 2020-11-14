@@ -1,0 +1,7 @@
+.col-sm {
+    max-height: 80% !important;
+}
+
+.col-sm.vert {
+    max-height: 60% !important;
+}
