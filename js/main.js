@@ -1,16 +1,17 @@
 var applyDarkmode = false;
 var state = false;
+var debug = "false";
 if (getCookie("darkmode") == null) {
   applyDarkmode = false;
-  console.log('Cookie "darkmode" empty');
+  if(debug == "true") console.log('Cookie "darkmode" empty');
 } else {
   applyDarkmode = getCookie("darkmode");
-  console.log("Cookie darkmode:" + applyDarkmode);
+  if(debug == "true") console.log("Cookie darkmode:" + applyDarkmode);
 }
 var isDark = false;
 
 function setdarkMode(state) {
-  console.log(
+  if(debug == "true") console.log(
     'function "setdarkMode" was initiated with value "state" as ' + state
   );
   var elements = document.getElementsByClassName("couldDark");
@@ -35,7 +36,7 @@ function setdarkMode(state) {
 }
 
 function setNavbar(state) {
-  console.log(
+  if(debug == "true") console.log(
     'function "setNavbar" was initiated with value "state" as ' + state
   );
   if (state) {
@@ -54,7 +55,7 @@ function setNavbar(state) {
 
 function darkMode() {
   applyDarkmode = !applyDarkmode;
-  console.log("applyDarkmode:" + applyDarkmode);
+  if(debug == "true") console.log("applyDarkmode:" + applyDarkmode);
   setdarkMode(applyDarkmode);
   setNavbar(applyDarkmode);
   return;
@@ -93,6 +94,7 @@ function checkDarkmode() {
 }
 
 function load() {
+  debug = getCookie("debug");
   if(getCookie("darkmode") == "") {
     setCookie("darkmode", false, 999);
   }
@@ -125,3 +127,9 @@ function getCookie(cname) {
   return "";
 }
 /*End Cookie scripts*/
+
+function setDebug(debugval) {
+  setCookie("debug", debugval, 999);
+  debug = getCookie("debug");
+  return debug;
+}

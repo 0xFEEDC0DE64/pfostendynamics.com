@@ -3,7 +3,7 @@ function setactivePage() {
   var tmp = path.split("/").pop();
   var page = tmp.replace(".html", "");
   if (page == "") page = "home";
-  console.log("page:" + page);
+  if(debug == "true") console.log("page:" + page);
   var site = document.getElementsByClassName("canactive");
   len = site !== null ? site.length : 0;
   i = 0;
