@@ -7,9 +7,9 @@
 }
 
 body {
-  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: background 0.4s cubic-bezier(.86,0,.07,1), color 0.4s cubic-bezier(.86,0,.07,1);
 }
 
 nav {
-  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+  transition: background 0.4s cubic-bezier(.86,0,.07,1), color 0.4s cubic-bezier(.86,0,.07,1);
 }
