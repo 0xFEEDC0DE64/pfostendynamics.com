@@ -1,7 +1,15 @@
 .col-sm {
-    max-height: 80% !important;
+  max-height: 80% !important;
 }
 
 .col-sm.vert {
-    max-height: 60% !important;
+  max-height: 60% !important;
+}
+
+body {
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+nav {
+  transition: background 0.4s ease-in-out, color 0.4s ease-in-out;
 }
