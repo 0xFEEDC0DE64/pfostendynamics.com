@@ -5,11 +5,9 @@ define('ACTIVE_MENUITEM', 'news');
 
 require('includes/header.php');
 ?>
-
-
-
+<br>
 <div class="container">
-  <h1>News</h1>
+  <?php require('texts/articles.html');?>
 </div>
 
 <?php require('includes/footer.php'); ?>
