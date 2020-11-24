@@ -33,7 +33,7 @@ require('includes/header.php');
 
     <div class="container">
       <h2 class="mt-5 display-1">Careers</h2>
-      <p>
+      <p style="text-align: justify;">
         Company Overview Remarkably capable electric bobbycars will soon be
         commonplace in the real world. Pfostendynamics is working towards this
         future through the development of electric bobbycars with advanced
