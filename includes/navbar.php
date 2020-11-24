@@ -29,7 +29,7 @@
           id="navbarNavDropdown"
         >
           <ul class="navbar-nav">
-            <li class="nav-item home canactive">
+            <li class="nav-item home canactive <?php if (ACTIVE_MENUITEM == "home") { ?> active<?php } ?>">
               <a class="nav-link" href="./"
                 >Home <span class="sr-only">(current)</span></a
               >
@@ -65,19 +65,19 @@
                 >
               </div>
             </li>
-            <li class="nav-item careers canactive">
+            <li class="nav-item careers canactive <?php if (ACTIVE_MENUITEM == "careers") { ?> active<?php } ?>">
               <a class="nav-link" href="./careers">Careers</a>
             </li>
-            <li class="nav-item news canactive">
+            <li class="nav-item news canactive <?php if (ACTIVE_MENUITEM == "news") { ?> active<?php } ?>">
               <a class="nav-link" href="./news">News</a>
             </li>
-            <li class="nav-item about canactive">
+            <li class="nav-item about canactive <?php if (ACTIVE_MENUITEM == "about") { ?> active<?php } ?>">
               <a class="nav-link" href="./about">About</a>
             </li>
-            <li class="nav-item shop canactive">
+            <li class="nav-item shop canactive <?php if (ACTIVE_MENUITEM == "shop") { ?> active<?php } ?>">
               <a class="nav-link" href="./shop">Shop</a>
             </li>
-            <li class="nav-item impressum canactive">
+            <li class="nav-item impressum canactive<?php if (ACTIVE_MENUITEM == "impressum") { ?> active<?php } ?>">
               <a class="nav-link" href="./impressum">Impressum</a>
             </li>
           </ul>
@@ -92,6 +92,5 @@
           /></a>
         </div>
       </div>
-      <script src="./js/navbar.js"></script>
     </nav>
     <!--End Navbar-->

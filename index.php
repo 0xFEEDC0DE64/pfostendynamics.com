@@ -1,6 +1,7 @@
 <?php
 
 define('PAGE_TITLE', 'Home');
+define('ACTIVE_MENUITEM', 'home');
 
 require('includes/header.php');
 ?>
