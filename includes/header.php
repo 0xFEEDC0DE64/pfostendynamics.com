@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     />
 
-    <title>Home | Pfosten Dynamics</title>
+    <title><?php echo htmlentities(PAGE_TITLE); ?> | Pfosten Dynamics</title>
     <link rel="icon" href="./img/favicon.png" />
   </head>
 

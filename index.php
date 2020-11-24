@@ -1,4 +1,9 @@
-<?php require('includes/header.php'); ?>
+<?php
+
+define('PAGE_TITLE', 'Home');
+
+require('includes/header.php');
+?>
     <br />
     <br />
     <br />
