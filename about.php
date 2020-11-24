@@ -1,6 +1,6 @@
 <?php
 
-define('PAGE_TITLE', 'ABOUT');
+define('PAGE_TITLE', 'About');
 define('ACTIVE_MENUITEM', 'about');
 
 require('includes/header.php');
