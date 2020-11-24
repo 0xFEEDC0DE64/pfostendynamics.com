@@ -12,9 +12,16 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item home canactive <?php if (ACTIVE_MENUITEM == "home") { ?> active<?php } ?>">
-              <a class="nav-link" href="./">Home<?php if (ACTIVE_MENUITEM == "home") { ?> <span class="sr-only">(current)</span><?php } ?></a>
+            <?php
+            function makeMenuItem($text, $url, $active) {
+            ?>
+            <li class="nav-item home canactive <?php if ($active) { ?> active<?php } ?>">
+              <a class="nav-link" href="<?php echo htmlentities($url); ?>"><?php echo htmlentities($text); ?><?php if ($active) { ?> <span class="sr-only">(current)</span><?php } ?></a>
             </li>
+            <?php
+            }
+            ?>
+            <?php makeMenuItem("Home", "./", ACTIVE_MENUITEM == "home"); ?>
             <li class="nav-item dropdown vehicles bobbycar bobbyquad bobbybob bobbyklo bobbyboot bobbyhubschrauber raupenfahrzeug canactive">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vehicles</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -27,21 +34,11 @@
                 <a class="dropdown-item" href="./raupenfahrzeug">Raupenfahrzeug</a>
               </div>
             </li>
-            <li class="nav-item careers canactive<?php if (ACTIVE_MENUITEM == "careers") { ?> active<?php } ?>">
-              <a class="nav-link" href="./careers">Careers<?php if (ACTIVE_MENUITEM == "careers") { ?> <span class="sr-only">(current)</span><?php } ?></a>
-            </li>
-            <li class="nav-item news canactive<?php if (ACTIVE_MENUITEM == "news") { ?> active<?php } ?>">
-              <a class="nav-link" href="./news">News<?php if (ACTIVE_MENUITEM == "news") { ?> <span class="sr-only">(current)</span><?php } ?></a>
-            </li>
-            <li class="nav-item about canactive<?php if (ACTIVE_MENUITEM == "about") { ?> active<?php } ?>">
-              <a class="nav-link" href="./about">About<?php if (ACTIVE_MENUITEM == "about") { ?> <span class="sr-only">(current)</span><?php } ?></a>
-            </li>
-            <li class="nav-item shop canactive<?php if (ACTIVE_MENUITEM == "shop") { ?> active<?php } ?>">
-              <a class="nav-link" href="./shop">Shop<?php if (ACTIVE_MENUITEM == "shop") { ?> <span class="sr-only">(current)</span><?php } ?></a>
-            </li>
-            <li class="nav-item impressum canactive<?php if (ACTIVE_MENUITEM == "impressum") { ?> active<?php } ?>">
-              <a class="nav-link" href="./impressum">Impressum<?php if (ACTIVE_MENUITEM == "impressum") { ?> <span class="sr-only">(current)</span><?php } ?></a>
-            </li>
+            <?php makeMenuItem("Careers", "./careers", ACTIVE_MENUITEM == "careers"); ?>
+            <?php makeMenuItem("News", "./news", ACTIVE_MENUITEM == "news"); ?>
+            <?php makeMenuItem("About", "./about", ACTIVE_MENUITEM == "about"); ?>
+            <?php makeMenuItem("Shop", "./shop", ACTIVE_MENUITEM == "shop"); ?>
+            <?php makeMenuItem("Impressum", "./impressum", ACTIVE_MENUITEM == "impressum"); ?>
           </ul>
           <a class="nav-link" href="#" onclick="darkMode()"
             ><img
