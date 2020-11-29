@@ -11,3 +11,7 @@ body.darkMode {
 .text-shadow.darkMode {
     text-shadow: 1.3px 1.3px #818181 !important;
 }
+
+hr.darkMode {
+    border-color: rgb(144, 144, 144) !important;
+}
