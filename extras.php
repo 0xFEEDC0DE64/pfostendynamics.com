@@ -24,9 +24,7 @@ require('includes/header.php');
         border: 2px;
         border-style: ridge;
         border-color: gray;
-        "
-        alt="Click Here to download!"
-        draggable="false" ondragstart="return false;">
+        " alt="Click Here to download!" draggable="false" ondragstart="return false;">
         </a>
     </div>
     <hr class="couldDark">
@@ -40,25 +38,23 @@ require('includes/header.php');
         border: 2px;
         border-style: ridge;
         border-color: gray;
-        "
-        alt="Click Here to download!"
-        draggable="false" ondragstart="return false;">
+        " alt="Click Here to download!" draggable="false" ondragstart="return false;">
         </a>
     </div>
     <hr class="couldDark">
     <div id="kartoffelfahrzeug">
         <h3>Der Kartoffelfahrzeug (The potato-vehicle)</h3>
-        <p>This was <a href="https://pfostendynamics.com/about#greyhash">greyhashs</a> attempt of creating his own "instance" of a bobbycar. It was powered by two 
-         motors, a <a href="https://en.wikipedia.org/wiki/Club-Mate" target="_blank" rel="noopener"> mate box </a> and a not so good steering wheel in the form of two sliding Potentiometers. And after an unscheduled disassembly there is now a better built bobby car, whereby (as of 2020) it is still broken ...</p>
+        <p>This was <a href="https://pfostendynamics.com/about#greyhash">greyhashs</a> attempt of creating his own "instance" of a bobbycar. It was powered by two
+            motors, a <a href="https://en.wikipedia.org/wiki/Club-Mate" target="_blank" rel="noopener"> mate box </a> and a not so good steering wheel in the form of two sliding Potentiometers. And after an unscheduled disassembly there is now a better built bobby car, whereby (as of 2020) it is still broken ...</p>
         <img class="img-fluid" src="https://pfostendynamics.com/extras/kartoffel.jpg" style="
         max-width: 512px; 
         width: 100%; 
         border: 2px;
         border-style: ridge;
         border-color: gray;
-        "
-        draggable="false" ondragstart="return false;">
+        " draggable="false" ondragstart="return false;">
     </div>
+    <hr class="couldDark">
     <br>
     <br>
 </div>
