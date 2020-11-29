@@ -21,14 +21,14 @@ function setdarkMode(state) {
     for (i; i < len; i++) {
       elements[i].classList.add("darkMode");
     }
-    document.getElementById("darkModeImg").src = "./img/darkmode.png";
-    document.getElementById("pfostendynamics").src = "./img/PfostenDynamicsDark.png";
+    document.getElementById("darkModeImg").src = "https://pfostendynamics.com/img/darkmode.png";
+    document.getElementById("pfostendynamics").src = "https://pfostendynamics.com/img/PfostenDynamicsDark.png";
   } else if (state == false) {
     for (i; i < len; i++) {
       elements[i].classList.remove("darkMode");
     }
-    document.getElementById("darkModeImg").src = "./img/lightmode.png";
-    document.getElementById("pfostendynamics").src = "./img/PfostenDynamics.png";
+    document.getElementById("darkModeImg").src = "https://pfostendynamics.com/img/lightmode.png";
+    document.getElementById("pfostendynamics").src = "https://pfostendynamics.com/img/PfostenDynamics.png";
   }
   state = state.toString();
   setCookie("darkmode", state, 999);
@@ -65,11 +65,11 @@ function checkDarkmode() {
   var tmp = getCookie("darkmode");
   if (tmp == "false") {
     isDark = false;
-    document.getElementById("darkModeImg").src = "./img/lightmode.png";
-    document.getElementById("pfostendynamics").src = "./img/PfostenDynamics.png";
+    document.getElementById("darkModeImg").src = "https://pfostendynamics.com/img/lightmode.png";
+    document.getElementById("pfostendynamics").src = "https://pfostendynamics.com/img/PfostenDynamics.png";
   } else if (tmp == "true") {
-    document.getElementById("darkModeImg").src = "./img/darkmode.png";
-    document.getElementById("pfostendynamics").src = "./img/PfostenDynamicsDark.png";
+    document.getElementById("darkModeImg").src = "https://pfostendynamics.com/img/darkmode.png";
+    document.getElementById("pfostendynamics").src = "https://pfostendynamics.com/img/PfostenDynamicsDark.png";
     isDark = true;
   }
   applyDarkmode = isDark;
@@ -82,12 +82,12 @@ function checkDarkmode() {
     for (i; i < len; i++) {
       elements[i].className += " darkMode";
     }
-    document.getElementById("darkModeImg").src = "./img/darkmode.png";
+    document.getElementById("darkModeImg").src = "https://pfostendynamics.com/img/darkmode.png";
   } else if (state == false) {
     for (i; i < len; i++) {
       elements[i].classList.remove("darkMode");
     }
-    document.getElementById("darkModeImg").src = "./img/lightmode.png";
+    document.getElementById("darkModeImg").src = "https://pfostendynamics.com/img/lightmode.png";
   }
   setNavbar(isDark);
   return isDark;
