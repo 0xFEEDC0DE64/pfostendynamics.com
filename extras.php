@@ -18,7 +18,7 @@ require('includes/header.php');
         <h3>Bobbycar</h3>
         <p>This is an .stl file containing an 3d model of a standard bobbycar (Click picture to download!)</p>
         <a href="https://pfostendynamics.com/extras/bobbycar.stl" draggable="false" ondragstart="return false;">
-            <img class="img-fluid" src="https:/pfostendynamics.com/extras/bobbycar.jpg" style="
+            <img class="img-fluid" src="https://pfostendynamics.com/extras/bobbycar.jpg" style="
         max-width: 512px; 
         width: 100%; 
         border: 2px;

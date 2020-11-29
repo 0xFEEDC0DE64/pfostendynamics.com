@@ -7,8 +7,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="stylesheet" href="./css/darkmode.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://pfostendynamics.com/css/darkmode.css" />
+    <link rel="stylesheet" href="https://pfostendynamics.com/css/style.css" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -18,7 +18,7 @@
     />
 
     <title><?php echo htmlentities(PAGE_TITLE); ?> | Pfosten Dynamics</title>
-    <link rel="icon" href="./img/favicon.png" />
+    <link rel="icon" href="https://pfostendynamics.com/img/favicon.png" />
   </head>
 
   <body onload="load()" class="couldDark">
