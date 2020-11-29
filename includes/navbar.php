@@ -1,5 +1,5 @@
     <!--Begin Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light couldDark disable-select" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light couldDark disable-select fixed-top" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="./" draggable="false" ondragstart="return false;">
           <img src="./img/PfostenDynamics.png" style="max-height: 60px" class="d-inline-block align-top" alt="" loading="lazy" id="pfostendynamics" />
