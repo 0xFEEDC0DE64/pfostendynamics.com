@@ -111,7 +111,7 @@ require('includes/header.php');
               " draggable="false" ondragstart="return false;" />
         <div class="media-body">
           <h3 class="mt-0 mb-1" id="feedc0de">feedc0de</h3>
-          <p style="max-width: 20vw; hyphens: auto; text-align: justify">
+          <p class="about-p">
             feedcode text
           </p>
         </div>
@@ -120,7 +120,7 @@ require('includes/header.php');
       <li class="media">
         <div class="media-body">
           <h3 class="mt-0 mb-1" id="peterp">peterp</h3>
-          <p style="max-width: 20vw; hyphens: auto; text-align: justify">
+          <p class="about-p">
             peterp text
           </p>
         </div>
@@ -135,7 +135,7 @@ require('includes/header.php');
               " draggable="false" ondragstart="return false;" />
         <div class="media-body">
           <h3 class="mt-0 mb-1" id="greyhash">greyhash - Bobbycar Builder</h3>
-          <p style="max-width: 20vw; hyphens: auto; text-align: justify">
+          <p class="about-p">
             This is the guy who invented <a href="./extras#kartoffelfahrzeug" target="_blank" rel="noopener">"Der Kartoffelfahrzeug"</a>. 
             Now he has build a new bobbycar, and if everything works (which it wont), it will even have RGB!
           </p>
@@ -151,7 +151,7 @@ require('includes/header.php');
               " draggable="false" ondragstart="return false;" />
         <div class="media-body">
           <h3 class="mt-0 mb-1" id="mick">mick</h3>
-          <p style="max-width: 20vw; hyphens: auto; text-align: justify">
+          <p class="about-p">
             mick text
           </p>
         </div>
@@ -166,7 +166,7 @@ require('includes/header.php');
               " draggable="false" ondragstart="return false;" />
         <div class="media-body">
           <h3 class="mt-0 mb-1" id="commanderred">CommanderRed - (WEB-DESIGN)</h3>
-          <p style="max-width: 20vw; hyphens: auto; text-align: justify">
+          <p class="about-p">
             This is the guy who does most of the web-design, so send complains to him! (And yes, he wrote this line himself....)
           </p>
         </div>
