@@ -25,7 +25,8 @@ require('includes/header.php');
             margin-right: auto;
             max-height: 5cm;
           "
-          class="img-fluid"
+          class="img-fluid disable-select"
+          draggable="false" ondragstart="return false;"
         />
         <h1 style="text-align: center; position: relative"></h1>
       </header>
