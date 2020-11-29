@@ -21,7 +21,7 @@
             ?>
             <?php makeMenuItem("Home", "https://pfostendynamics.com/", ACTIVE_MENUITEM == "home"); ?>
             <li class="nav-item dropdown vehicles bobbycar bobbyquad bobbybob bobbyklo bobbyboot bobbyhubschrauber raupenfahrzeug canactive">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" draggable="false" ondragstart="return false;">Vehicles</a>
+              <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" draggable="false" ondragstart="return false;">Vehicles</a>
               <div class=" dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="https://pfostendynamics.com/bobbycar" draggable="false" ondragstart="return false;">Bobbycar</a>
                 <a class="dropdown-item" href="https://pfostendynamics.com/bobbyquad" draggable="false" ondragstart="return false;">Bobbyquad</a>
@@ -38,7 +38,7 @@
             <?php makeMenuItem("Shop", "https://pfostendynamics.com/shop", ACTIVE_MENUITEM == "shop"); ?>
             <?php makeMenuItem("Impressum", "https://pfostendynamics.com/impressum", ACTIVE_MENUITEM == "impressum"); ?>
           </ul>
-          <a class="nav-link" href="#" onclick="darkMode()" draggable="false" ondragstart="return false;"><img id="darkModeImg" class="img-fluid" data-toggle="tooltip" data-placement="top" title="Toggle darkmode" draggable="false" ondragstart="return false;" /></a>
+          <a class="nav-link toggleDarkmode" href="javascript:void(0)" onclick="darkMode()" draggable="false" ondragstart="return false;"><img id="darkModeImg" class="img-fluid" data-toggle="tooltip" data-placement="top" title="Toggle darkmode" draggable="false" ondragstart="return false;" /></a>
         </div>
       </div>
     </nav>
