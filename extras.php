@@ -1,6 +1,7 @@
 <?php
 
 define('PAGE_TITLE', 'Extras');
+define('ACTIVE_MENUITEM', 'extras');
 
 require('includes/header.php');
 ?>
