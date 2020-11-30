@@ -136,7 +136,7 @@ require('includes/header.php');
         <div class="media-body">
           <h3 class="mt-0 mb-1" id="greyhash">greyhash - Bobbycar Builder</h3>
           <p class="about-p">
-            This is the guy who invented <a href="./extras#kartoffelfahrzeug" target="_blank" rel="noopener">"Der Kartoffelfahrzeug"</a>. 
+            This is the guy who invented <a href="./extras#kartoffelfahrzeug" target="_blank" rel="noopener">"Der Kartoffelfahrzeug"</a>.
             Now he has build a new bobbycar, and if everything works (which it wont), it will even have RGB!
           </p>
         </div>
@@ -169,6 +169,8 @@ require('includes/header.php');
           <p class="about-p">
             This is the guy who does most of the web-design, so send complains to him! (And yes, he wrote this line himself....)
           </p>
+          <!-- Place this tag where you want the button to render. -->
+          <a class="github-button" href="https://github.com/CommanderRedYT" data-color-scheme="no-preference: dark; light: dark; dark: dark;" aria-label="Follow @CommanderRedYT on GitHub" data-size="large">Follow @CommanderRedYT</a>
         </div>
       </li>
     </ul>
