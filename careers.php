@@ -8,13 +8,12 @@ require('includes/header.php');
     <div>
       <header
         style="
-          background-color: rgba(219, 219, 219, 0.448);
-          border-bottom-width: 3px;
+        border-bottom-width: 3px;
           border-bottom-style: solid;
           border-top-width: 3px;
           border-top-style: solid;
         "
-        class="shadow p-10 mb-3"
+        class="shadow p-10 mb-3 couldDark"
       >
         <img
           id="background-image"

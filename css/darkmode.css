@@ -3,6 +3,10 @@
     width: 32px
 }
 
+header.darkMode {
+    background-color: rgba(255, 255, 255, 0.76) !important;
+}
+
 body.darkMode {
     background-color: rgb(63, 63, 63) !important;
     color: white !important;
@@ -15,3 +19,4 @@ body.darkMode {
 hr.darkMode {
     border-color: rgb(144, 144, 144) !important;
 }
+
