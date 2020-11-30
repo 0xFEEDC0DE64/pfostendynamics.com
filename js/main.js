@@ -99,6 +99,7 @@ function load() {
     setCookie("darkmode", false, 999);
   }
   checkDarkmode();
+  if(location.hostname == "localhost") givePHP();
 }
 
 /*Cookie scripts*/
