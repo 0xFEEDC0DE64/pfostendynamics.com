@@ -1,5 +1,5 @@
     <!--Begin Navbar-->
-    <nav class="navbar navbar-expand-lg couldDark disable-select sticky-top <?php if ($_COOKIE["darkmode"] == "true") {
+    <nav style="width: 100vw;" class="navbar navbar-expand-lg couldDark disable-select sticky-top <?php if ($_COOKIE["darkmode"] == "true") {
                                                                               echo "darkMode bg-dark navbar-dark";
                                                                             } else {
                                                                               echo "bg-light navbar-light";
