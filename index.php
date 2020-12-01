@@ -6,8 +6,6 @@ define('ACTIVE_MENUITEM', 'home');
 require('includes/header.php');
 ?>
 <br />
-<br />
-<br />
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm text-right">
