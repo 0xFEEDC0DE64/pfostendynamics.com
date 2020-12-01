@@ -21,5 +21,5 @@
     <link rel="icon" href="./img/favicon.png" />
   </head>
 
-  <body class="couldDark <?php if($_COOKIE["darkmode"] == "true") echo "darkMode"; ?>">
+  <body style="width: 100vw !important; overflow-x: hidden !important;" class="couldDark <?php if($_COOKIE["darkmode"] == "true") echo "darkMode"; ?>">
 <?php require('navbar.php') ?>
