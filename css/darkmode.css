@@ -25,6 +25,10 @@ hr.darkMode {
     color: white !important;
 }
 
+.dropdown-item.darkMode:hover {
+    background-color: rgb(97, 97, 97) !important;
+}
+
 .dropdown-menu.darkMode {
     background-color: rgb(56, 56, 56) !important;
     color: white !important;
