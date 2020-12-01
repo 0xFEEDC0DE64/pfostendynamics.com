@@ -30,14 +30,14 @@
             <?php makeMenuItem("Home", "./", ACTIVE_MENUITEM == "home"); ?>
             <li class="nav-item dropdown vehicles bobbycar bobbyquad bobbybob bobbyklo bobbyboot bobbyhubschrauber raupenfahrzeug canactive">
               <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" draggable="false" ondragstart="return false;">Vehicles</a>
-              <div class=" dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item givePHP" href="./bobbycar" draggable="false" ondragstart="return false;">Bobbycar</a>
-                <a class="dropdown-item givePHP" href="./bobbyquad" draggable="false" ondragstart="return false;">Bobbyquad</a>
-                <a class="dropdown-item givePHP" href="./bobbybob" draggable="false" ondragstart="return false;">Bobbybob</a>
-                <a class="dropdown-item givePHP" href="./bobbyklo" draggable="false" ondragstart="return false;">Bobbyklo</a>
-                <a class="dropdown-item givePHP" href="./bobbyboot" draggable="false" ondragstart="return false;">Bobbyboot</a>
-                <a class="dropdown-item givePHP" href="./bobbyhubschrauber" draggable="false" ondragstart="return false;">Bobbyhubschrauber</a>
-                <a class="dropdown-item givePHP" href="./raupenfahrzeug" draggable="false" ondragstart="return false;">Raupenfahrzeug</a>
+              <div class="dropdown-menu couldDark <?php if($_COOKIE["darkmode"] == "true") echo "darkMode"; ?>" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item givePHP couldDark <?php if($_COOKIE["darkmode"] == "true") echo "darkMode"; ?>" href="./bobbycar" draggable="false" ondragstart="return false;">Bobbycar</a>
+                <a class="dropdown-item givePHP couldDark <?php if($_COOKIE["darkmode"] == "true") echo "darkMode"; ?>" href="./bobbyquad" draggable="false" ondragstart="return false;">Bobbyquad</a>
+                <a class="dropdown-item givePHP couldDark <?php if($_COOKIE["darkmode"] == "true") echo "darkMode"; ?>" href="./bobbybob" draggable="false" ondragstart="return false;">Bobbybob</a>
+                <a class="dropdown-item givePHP couldDark <?php if($_COOKIE["darkmode"] == "true") echo "darkMode"; ?>" href="./bobbyklo" draggable="false" ondragstart="return false;">Bobbyklo</a>
+                <a class="dropdown-item givePHP couldDark <?php if($_COOKIE["darkmode"] == "true") echo "darkMode"; ?>" href="./bobbyboot" draggable="false" ondragstart="return false;">Bobbyboot</a>
+                <a class="dropdown-item givePHP couldDark <?php if($_COOKIE["darkmode"] == "true") echo "darkMode"; ?>" href="./bobbyhubschrauber" draggable="false" ondragstart="return false;">Bobbyhubschrauber</a>
+                <a class="dropdown-item givePHP couldDark <?php if($_COOKIE["darkmode"] == "true") echo "darkMode"; ?>" href="./raupenfahrzeug" draggable="false" ondragstart="return false;">Raupenfahrzeug</a>
               </div>
             </li>
             <?php makeMenuItem("Careers", "./careers", ACTIVE_MENUITEM == "careers"); ?>
