@@ -13,7 +13,7 @@ require('includes/header.php');
           border-top-width: 3px;
           border-top-style: solid;
         "
-        class="shadow p-10 mb-3 couldDark"
+        class="shadow p-10 mb-3 couldDark <?php if($_COOKIE["darkmode"] == "true") echo "darkMode"; ?>"
       >
         <img
           id="background-image"

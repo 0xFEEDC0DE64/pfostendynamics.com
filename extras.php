@@ -13,7 +13,7 @@ require('includes/header.php');
     </h1>
     <h4>Okay, maybe more than one..!</h4>
     <br>
-    <hr class="couldDark">
+    <hr class="couldDark <?php if($_COOKIE["darkmode"] == "true") echo "darkMode"; ?>">
     <div id="bobbycar-stl">
         <h3>Bobbycar</h3>
         <p>This is an .stl file containing an 3d model of a standard bobbycar (Click picture to download!)</p>
@@ -27,7 +27,7 @@ require('includes/header.php');
         " alt="Click Here to download!" draggable="false" ondragstart="return false;">
         </a>
     </div>
-    <hr class="couldDark">
+    <hr class="couldDark <?php if($_COOKIE["darkmode"] == "true") echo "darkMode"; ?>">
     <div id="logo-stl">
         <h3>Our Logo</h3>
         <p>Here we put our logo as an "plate", so you can print it out and put it somewhere so it can get dusty (Click picture to download!)</p>
@@ -41,7 +41,7 @@ require('includes/header.php');
         " alt="Click Here to download!" draggable="false" ondragstart="return false;">
         </a>
     </div>
-    <hr class="couldDark">
+    <hr class="couldDark <?php if($_COOKIE["darkmode"] == "true") echo "darkMode"; ?>">
     <div id="kartoffelfahrzeug">
         <h3>Der Kartoffelfahrzeug (The potato-vehicle)</h3>
         <p>This was <a href="./about#greyhash">greyhashs</a> attempt of creating his own "instance" of a bobbycar. It was powered by two
@@ -54,7 +54,7 @@ require('includes/header.php');
         border-color: gray;
         " draggable="false" ondragstart="return false;">
     </div>
-    <hr class="couldDark">
+    <hr class="couldDark <?php if($_COOKIE["darkmode"] == "true") echo "darkMode"; ?>">
     <br>
     <br>
 </div>

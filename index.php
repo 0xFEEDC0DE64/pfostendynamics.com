@@ -12,7 +12,7 @@ require('includes/header.php');
       <div class="row">
         <div class="col-sm text-right">
           <br />
-          <h1 class="text-shadow couldDark" style="text-shadow: 1.3px 1.3px #686868">Pfosten Dynamics</h1>
+          <h1 class="text-shadow couldDark <?php if($_COOKIE["darkmode"] == "true") echo "darkMode"; ?>" style="text-shadow: 1.3px 1.3px #686868">Pfosten Dynamics</h1>
           <h2>Change your idea of what idiots can do</h2>
         </div>
         <div class="col-sm text-left">

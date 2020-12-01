@@ -1,8 +1,16 @@
     <!--Begin Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light couldDark disable-select sticky-top" id="navbar">
+    <nav class="navbar navbar-expand-lg couldDark disable-select sticky-top <?php if ($_COOKIE["darkmode"] == "true") {
+                                                                              echo "darkMode bg-dark navbar-dark";
+                                                                            } else {
+                                                                              echo "bg-light navbar-light";
+                                                                            } ?>" id="navbar">
       <div class="container">
         <a class="navbar-brand" href="./" draggable="false" ondragstart="return false;">
-          <img src="./img/PfostenDynamics.png" style="max-height: 60px" class="d-inline-block align-top" alt="" loading="lazy" id="pfostendynamics" />
+          <img src="<?php if ($_COOKIE["darkmode"] == "true") {
+                      echo "./img/PfostenDynamicsDark.png";
+                    } else {
+                      echo "./img/PfostenDynamics.png";
+                    } ?>" style="max-height: 60px" class="d-inline-block align-top" alt="" loading="lazy" id="pfostendynamics" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -38,7 +46,12 @@
             <?php makeMenuItem("Shop", "./shop", ACTIVE_MENUITEM == "shop"); ?>
             <?php makeMenuItem("Impressum", "./impressum", ACTIVE_MENUITEM == "impressum"); ?>
           </ul>
-          <a class="nav-link toggleDarkmode" href="javascript:void(0)" onclick="darkMode()" draggable="false" ondragstart="return false;"><img id="darkModeImg" class="img-fluid" data-toggle="tooltip" data-placement="top" title="Toggle darkmode" draggable="false" ondragstart="return false;" /></a>
+          <a class="nav-link toggleDarkmode" href="javascript:void(0)" onclick="darkMode()" draggable="false" ondragstart="return false;">
+            <img src="<?php if ($_COOKIE["darkmode"] == "true") {
+                      echo "./img/darkmode.png";
+                    } else {
+                      echo "./img/lightmode.png";
+                    } ?>" id="darkModeImg" class="img-fluid" data-toggle="tooltip" data-placement="top" title="Toggle darkmode" draggable="false" ondragstart="return false;" /></a>
         </div>
       </div>
     </nav>
