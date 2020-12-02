@@ -36,3 +36,11 @@ header {
  -moz-user-select: none; /* Firefox */
  -ms-user-select: none; /* Internet Explorer/Edge */
 }
+
+a {
+  outline: none !important;
+}
+
+button {
+  outline: none !important;
+}
