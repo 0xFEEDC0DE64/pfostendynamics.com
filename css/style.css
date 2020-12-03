@@ -17,7 +17,7 @@ div.highlight {
   margin-left: -15px;
   margin-right: -15px;
   width: 100vw;
-  
+  transition: background 0.4s cubic-bezier(.86,0,.07,1), color 0.4s cubic-bezier(.86,0,.07,1);
 }
 
 nav {
@@ -39,6 +39,7 @@ header {
 
 a {
   outline: none !important;
+  transition: background 0.4s cubic-bezier(.86,0,.07,1), color 0.4s cubic-bezier(.86,0,.07,1);
 }
 
 button {
