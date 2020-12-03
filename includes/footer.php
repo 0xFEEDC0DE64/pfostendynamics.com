@@ -13,6 +13,10 @@
     <script src="./js/local.js"></script>
 
     <script>
+      AOS.init();
+    </script>
+
+    <script>
       $(function() {
         $('[data-toggle="tooltip"]').tooltip();
       });

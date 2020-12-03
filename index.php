@@ -7,20 +7,22 @@ require('includes/header.php');
 ?>
 <br />
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-sm text-right">
-      <br />
-      <h1 class="text-shadow couldDark <?php if ($_COOKIE["darkmode"] == "true") echo "darkMode"; ?>" style="text-shadow: 1.3px 1.3px #686868">Pfosten Dynamics</h1>
-      <h2>Change your idea of what idiots can do</h2>
-    </div>
-    <div class="col-sm text-left">
-      <br />
-      <img src="./img/peterXfeedc0de.jpg" style="
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm text-right">
+        <br />
+        <h1 class="text-shadow couldDark <?php if ($_COOKIE["darkmode"] == "true") echo "darkMode"; ?>" style="text-shadow: 1.3px 1.3px #686868">Pfosten Dynamics</h1>
+        <h2>Change your idea of what idiots can do</h2>
+      </div>
+      <div class="col-sm text-left">
+        <br />
+        <img src="./img/peterXfeedc0de.jpg" style="
               max-height: 600px;
               border: 2px;
               border-style: ridge;
               border-color: gray;
             " class="d-inline-block shadow rounded img-fluid" alt="" loading="lazy" draggable="false" ondragstart="return false;" />
+      </div>
     </div>
   </div>
   <br />

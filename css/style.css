@@ -13,7 +13,7 @@ body {
 }
 
 div.highlight {
-  background-color: rgba(165, 165, 165, 0.372);
+  background-color: #646464 !important;
   margin-left: -15px;
   margin-right: -15px;
   width: 100vw;
