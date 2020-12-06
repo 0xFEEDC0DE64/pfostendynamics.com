@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="<?php echo htmlentities(DESC); ?>">
+  <meta name="description" content='Welcome to Pfostendynamics! Here you can find all our wonderful projects, from bobbycars to helicopters! "Change you idea of what idiots can do'>
   <link rel="stylesheet" href="./css/darkmode.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <!-- Bootstrap CSS -->
