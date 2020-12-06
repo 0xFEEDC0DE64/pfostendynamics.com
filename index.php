@@ -2,6 +2,7 @@
 
 define('PAGE_TITLE', 'Home');
 define('ACTIVE_MENUITEM', 'home');
+define('DESC', 'Welcome to Pfostendynamics! Here you can find all our wonderful projects, from bobbycars to helicopters! "Change you idea of what idiots can do');
 
 require('includes/header.php');
 ?>
