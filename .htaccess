@@ -17,7 +17,12 @@ RewriteRule ^(.*)$ $1.php [NC,L]
 ErrorDocument 404 /404
 ErrorDocument 403 /403
 
-<Files template.php start.sh>
+<Files template.php>
+order allow,deny
+deny from all
+</Files>
+
+<Files start.sh>
 order allow,deny
 deny from all
 </Files>
