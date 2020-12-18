@@ -21,9 +21,3 @@ ErrorDocument 403 /403
 order allow,deny
 deny from all
 </Files>
-
-<Files start.sh>
-order allow,deny
-deny from all
-</Files>
- 
