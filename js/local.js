@@ -3,7 +3,11 @@ function givePHP() {
   len = elements !== null ? elements.length : 0;
   i = 0;
   for (i; i < len; i++) {
-    if(elements[i].href != "http://localhost/")
+    if(elements[i].id != "nophp")
     elements[i].href += ".php";
   }
+}
+
+function load() {
+  givePHP();
 }

@@ -1,3 +1,6 @@
+<?php if (!isset($_COOKIE["darkmode"])) {
+    $_COOKIE["darkmode"] = "false";
+}?>
 <!DOCTYPE html>
 <html lang="en" style="scroll-behavior: smooth">
 

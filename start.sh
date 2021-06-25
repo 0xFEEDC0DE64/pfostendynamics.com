@@ -25,5 +25,5 @@ printf "${PWD##*/}"
 printf ' ...\n'
 echo $GETIP
 su "$USERNAME" -c "firefox --new-tab $TAB"
-sudo php -S $IP
+sudo php -S $IP:80
 cd ~
