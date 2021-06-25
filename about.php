@@ -39,6 +39,7 @@ require('includes/header.php');
   <h2 class="mt-5 display-4 text-uppercase" style="text-shadow: 1px 1px #686868">
     FAQs about Pfosten Dynamics
   </h2>
+  <article>
   <div id="faq">
     <div>
       <a href="#Q1" class="text-decoration-none">Q: Why does Pfosten Dynamics make electric bobbycars?</a>
@@ -79,6 +80,7 @@ require('includes/header.php');
       </div>
     </div>
   </div>
+  </article>
 </div>
 <div id="about-us" class="container" style="border-top: 5px; border-top-style: solid">
   <br />
