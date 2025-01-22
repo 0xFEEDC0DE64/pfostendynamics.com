@@ -171,8 +171,6 @@ require('includes/header.php');
           <p class="about-p">
             This is the guy who does most of the web-design, so send complains to him! (And yes, he wrote this line himself....)
           </p>
-          <!-- Place this tag where you want the button to render. -->
-          <a class="github-button" href="https://github.com/CommanderRedYT" data-color-scheme="no-preference: dark; light: dark; dark: dark;" aria-label="Follow @CommanderRedYT on GitHub" data-size="large">Follow @CommanderRedYT</a>
         </div>
       </li>
     </ul>
