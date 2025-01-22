@@ -3,24 +3,24 @@ var state = false;
 var debug = "false";
 if (getCookie("darkmode") == null) {
   applyDarkmode = false;
-  if (debug == "true") console.log('Cookie "darkmode" empty');
+  if (debug === "true") console.log('Cookie "darkmode" empty');
 } else {
   applyDarkmode = getCookie("darkmode");
-  if (debug == "true") console.log("Cookie darkmode:" + applyDarkmode);
+  if (debug === "true") console.log("Cookie darkmode:" + applyDarkmode);
 }
 var isDark = false;
 
 function setdarkMode(state) {
-  if (debug == "true")
+  if (debug === "true")
     console.log(
       'function "setdarkMode" was initiated with value "state" as ' + state
     );
   var elements = document.getElementsByClassName("couldDark");
   len = elements !== null ? elements.length : 0;
   i = 0;
-  if (state == true) {
+  if (state === true) {
     for (i; i < len; i++) {
-      if (elements[i].classList.contains("darkMode") == false) {
+      if (elements[i].classList.contains("darkMode") === false) {
         elements[i].classList.add("darkMode");
       }
     }
@@ -28,9 +28,9 @@ function setdarkMode(state) {
       "https://pfostendynamics.com/img/darkmode.png";
     document.getElementById("pfostendynamics").src =
       "https://pfostendynamics.com/img/PfostenDynamicsDark.png";
-  } else if (state == false) {
+  } else if (state === false) {
     for (i; i < len; i++) {
-      if (elements[i].classList.contains("darkMode") == true) {
+      if (elements[i].classList.contains("darkMode") === true) {
         elements[i].classList.remove("darkMode");
       }
     }
@@ -45,7 +45,7 @@ function setdarkMode(state) {
 }
 
 function setNavbar(state) {
-  if (debug == "true")
+  if (debug === "true")
     console.log(
       'function "setNavbar" was initiated with value "state" as ' + state
     );
@@ -65,21 +65,20 @@ function setNavbar(state) {
 
 function darkMode() {
   applyDarkmode = !applyDarkmode;
-  if (debug == "true") console.log("applyDarkmode:" + applyDarkmode);
+  if (debug === "true") console.log("applyDarkmode:" + applyDarkmode);
   setdarkMode(applyDarkmode);
   setNavbar(applyDarkmode);
-  return;
 }
 
 function checkDarkmode() {
-  var tmp = getCookie("darkmode");
-  if (tmp == "false") {
+  const tmp = getCookie("darkmode");
+  if (tmp === "false") {
     isDark = false;
     document.getElementById("darkModeImg").src =
       "https://pfostendynamics.com/img/lightmode.png";
     document.getElementById("pfostendynamics").src =
       "https://pfostendynamics.com/img/PfostenDynamics.png";
-  } else if (tmp == "true") {
+  } else if (tmp === "true") {
     document.getElementById("darkModeImg").src =
       "https://pfostendynamics.com/img/darkmode.png";
     document.getElementById("pfostendynamics").src =
@@ -92,17 +91,17 @@ function checkDarkmode() {
   var elements = document.getElementsByClassName("couldDark");
   len = elements !== null ? elements.length : 0;
   i = 0;
-  if (state == true) {
+  if (state === true) {
     for (i; i < len; i++) {
-      if (elements[i].classList.contains("darkMode") == false) {
+      if (elements[i].classList.contains("darkMode") === false) {
         elements[i].className += " darkMode";
       }
     }
     document.getElementById("darkModeImg").src =
       "https://pfostendynamics.com/img/darkmode.png";
-  } else if (state == false) {
+  } else if (state === false) {
     for (i; i < len; i++) {
-      if (elements[i].classList.contains("darkMode") == true) {
+      if (elements[i].classList.contains("darkMode") === true) {
         elements[i].classList.remove("darkMode");
       }
     }
@@ -115,11 +114,11 @@ function checkDarkmode() {
 
 function load() {
   debug = getCookie("debug");
-  if (getCookie("darkmode") == "") {
+  if (getCookie("darkmode") === "") {
     setCookie("darkmode", false, 999);
   }
   checkDarkmode();
-  if (location.hostname == "localhost") givePHP();
+  if (location.hostname === "localhost") givePHP();
 }
 
 /*Cookie scripts*/
